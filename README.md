@@ -5,17 +5,16 @@ A comprehensive platform featuring a **FastAPI backend** and a **Next.js React f
 ## 📋 Table of Contents
 
 1. [Quick Start](#quick-start)
-2. [Option 1: Running with Docker (Recommended)](#option-1-running-with-docker-recommended)
-3. [Option 2: Running Locally](#option-2-running-locally)
-4. [Project Structure](#project-structure)
-5. [Complete Workflow Guide](#complete-workflow-guide)
-6. [API Endpoints](#api-endpoints)
-7. [Features](#features)
-8. [Technologies Used](#technologies-used)
-9. [Prerequisites](#prerequisites)
-10. [Limits and Constraints](#limits-and-constraints)
-11. [Troubleshooting](#troubleshooting)
-12. [License](#license)
+2. [Running Locally](#option-running-locally)
+3. [Project Structure](#project-structure)
+4. [Complete Workflow Guide](#complete-workflow-guide)
+5. [API Endpoints](#api-endpoints)
+6. [Features](#features)
+7. [Technologies Used](#technologies-used)
+8. [Prerequisites](#prerequisites)
+9. [Limits and Constraints](#limits-and-constraints)
+10. [Troubleshooting](#troubleshooting)
+11. [License](#license)
 
 ---
 
