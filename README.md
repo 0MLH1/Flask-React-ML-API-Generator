@@ -365,14 +365,6 @@ This section explains the typical user journey through the application.
 
 ## 📋 Prerequisites
 
-### For Docker Execution (Easiest)
-| Requirement | Minimum | Recommended |
-|-------------|---------|-------------|
-| Docker | 20.10 | 24.0+ |
-| RAM | 4 GB | 8 GB |
-| Disk Space | 2 GB | 5 GB |
-| CPU Cores | 2 | 4+ |
-
 ### For Local Execution
 | Requirement | Minimum | Recommended |
 |-------------|---------|-------------|
@@ -421,27 +413,6 @@ This section explains the typical user journey through the application.
 ---
 
 ## 🐛 Troubleshooting
-
-### Docker Issues
-
-**Problem**: "Docker daemon is not running"
-```bash
-# Solution: Start Docker Desktop or Docker daemon
-# Windows/Mac: Open Docker Desktop
-# Linux: sudo systemctl start docker
-```
-
-**Problem**: "Port 3000 or 8000 already in use"
-```bash
-# Solution:change ports in docker-compose.yml
-```
-
-**Problem**: "Out of memory" during training
-```bash
-# Increase Docker memory allocation:
-# Docker Desktop Settings → Resources → Memory (set to 8GB+)
-# Or reduce dataset size
-```
 
 ### Local Setup Issues
 
@@ -504,7 +475,7 @@ npm run dev -- -p 3001
 MIT License - See the `LICENSE` file for full details.
 
 ### Summary
-- ✅ Free for personal and commercial use
+- ⚠️  personal and commercial use restricted
 - ✅ Modify and distribute freely
 - ✅ Must include license notice
 - ⚠️ No warranty provided
