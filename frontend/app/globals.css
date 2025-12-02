@@ -1,0 +1,298 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Modern Apple-inspired light theme with white, dark gray, and fluid accents */
+  --background: oklch(0.98 0 0);
+  --foreground: oklch(0.15 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.15 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.15 0 0);
+  --primary: oklch(0.3 0.05 0);
+  --primary-foreground: oklch(0.98 0 0);
+  --secondary: oklch(0.92 0 0);
+  --secondary-foreground: oklch(0.15 0 0);
+  --muted: oklch(0.93 0 0);
+  --muted-foreground: oklch(0.5 0 0);
+  --accent: oklch(0.4 0.08 250);
+  --accent-foreground: oklch(0.98 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.98 0 0);
+  --border: oklch(0.94 0 0);
+  --input: oklch(0.96 0 0);
+  --ring: oklch(0.4 0.08 250);
+  --chart-1: oklch(0.5 0.12 250);
+  --chart-2: oklch(0.6 0.1 180);
+  --chart-3: oklch(0.55 0.1 30);
+  --chart-4: oklch(0.45 0.08 280);
+  --chart-5: oklch(0.65 0.08 100);
+  --radius: 0.75rem;
+  /* Sidebar tokens */
+  --sidebar: oklch(0.97 0 0);
+  --sidebar-foreground: oklch(0.15 0 0);
+  --sidebar-primary: oklch(0.3 0.05 0);
+  --sidebar-primary-foreground: oklch(0.98 0 0);
+  --sidebar-accent: oklch(0.4 0.08 250);
+  --sidebar-accent-foreground: oklch(0.98 0 0);
+  --sidebar-border: oklch(0.94 0 0);
+  --sidebar-ring: oklch(0.4 0.08 250);
+}
+
+.dark {
+  /* Modern dark mode with deep gray, white text, and fluid accents */
+  --background: oklch(0.12 0 0);
+  --foreground: oklch(0.95 0 0);
+  --card: oklch(0.16 0 0);
+  --card-foreground: oklch(0.95 0 0);
+  --popover: oklch(0.16 0 0);
+  --popover-foreground: oklch(0.95 0 0);
+  --primary: oklch(0.92 0 0);
+  --primary-foreground: oklch(0.12 0 0);
+  --secondary: oklch(0.22 0 0);
+  --secondary-foreground: oklch(0.95 0 0);
+  --muted: oklch(0.28 0 0);
+  --muted-foreground: oklch(0.65 0 0);
+  --accent: oklch(0.55 0.12 250);
+  --accent-foreground: oklch(0.95 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.95 0 0);
+  --border: oklch(0.22 0 0);
+  --input: oklch(0.18 0 0);
+  --ring: oklch(0.55 0.12 250);
+  --chart-1: oklch(0.6 0.15 250);
+  --chart-2: oklch(0.7 0.12 180);
+  --chart-3: oklch(0.65 0.12 30);
+  --chart-4: oklch(0.55 0.12 280);
+  --chart-5: oklch(0.75 0.1 100);
+  --sidebar: oklch(0.15 0 0);
+  --sidebar-foreground: oklch(0.95 0 0);
+  --sidebar-primary: oklch(0.92 0 0);
+  --sidebar-primary-foreground: oklch(0.12 0 0);
+  --sidebar-accent: oklch(0.55 0.12 250);
+  --sidebar-accent-foreground: oklch(0.95 0 0);
+  --sidebar-border: oklch(0.22 0 0);
+  --sidebar-ring: oklch(0.55 0.12 250);
+}
+
+@theme inline {
+  --font-sans: "Geist", "Geist Fallback";
+  --font-mono: "Geist Mono", "Geist Mono Fallback";
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+/* Modern fluid animations and transitions */
+@layer components {
+  /* Smooth transitions */
+  * {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  }
+
+  /* Cards with subtle shadow and backdrop */
+  .card, [class*="card"] {
+    @apply bg-card backdrop-blur-sm;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.04);
+    border: 1px solid var(--border);
+  }
+
+  .dark .card, .dark [class*="card"] {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Buttons with modern hover effect */
+  button, [role="button"] {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  button:hover:not(:disabled), [role="button"]:hover:not(:disabled) {
+    transform: translateY(-1px);
+  }
+
+  button:active:not(:disabled), [role="button"]:active:not(:disabled) {
+    transform: translateY(0px);
+  }
+
+  /* Input fields */
+  input, textarea, select {
+    @apply bg-input text-foreground;
+    border: 1px solid var(--border);
+    transition: all 0.2s ease;
+  }
+
+  input:focus, textarea:focus, select:focus {
+    border-color: var(--ring);
+    box-shadow: 0 0 0 3px rgba(var(--ring), 0.1);
+  }
+
+  /* Scroll area styling */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--background);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--muted);
+  }
+
+  /* Gradient accent lines */
+  .accent-line {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .accent-line::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    animation: slideAccent 3s ease-in-out infinite;
+  }
+
+  @keyframes slideAccent {
+    0%, 100% {
+      left: -100%;
+    }
+    50% {
+      left: 100%;
+    }
+  }
+
+  /* Modern dialog styles */
+  [role="dialog"] {
+    @apply backdrop-blur-md;
+  }
+
+  /* Smooth page transitions */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-in {
+    animation: fadeIn 0.4s ease-out;
+  }
+}
+
+/* Fluid responsive spacing */
+@layer utilities {
+  .space-fluid {
+    @apply space-y-4 md:space-y-6 lg:space-y-8;
+  }
+
+  .gap-fluid {
+    @apply gap-4 md:gap-6 lg:gap-8;
+  }
+
+  .px-fluid {
+    @apply px-4 md:px-6 lg:px-8;
+  }
+
+  .py-fluid {
+    @apply py-6 md:py-8 lg:py-10;
+  }
+
+  /* Modern glass effect */
+  .glass {
+    @apply backdrop-blur-lg bg-white/10 dark:bg-white/5 border border-white/20 dark:border-white/10;
+  }
+
+  /* Soft shadows */
+  .shadow-soft {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.04);
+  }
+
+  .shadow-soft-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
+  }
+
+  .dark .shadow-soft-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Smooth gradient backgrounds */
+  .gradient-soft {
+    background: linear-gradient(135deg, var(--background) 0%, color-mix(in oklch, var(--accent) 5%, var(--background)) 100%);
+  }
+
+  /* Text hierarchy */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .font-display {
+    @apply font-sans text-4xl font-bold tracking-tight;
+  }
+
+  .font-section {
+    @apply font-sans text-2xl font-semibold tracking-tight;
+  }
+
+  .font-subsection {
+    @apply font-sans text-lg font-semibold;
+  }
+}

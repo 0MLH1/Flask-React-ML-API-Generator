@@ -1,0 +1,40 @@
+
+# Python virtual environment
+backend/venv/
+
+# Flask cache / uploads
+backend/*.pem
+backend/tmp/
+backend/cache/
+# Generated models
+/backend/models/*.pkl
+
+# Generated APIs
+/backend/generated_apis/*.py
+
+# ========================================
+# NODE / REACT / NEXT.JS
+# ========================================
+frontend/node_modules/
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+frontend/.next/
+
+# Next.js build output
+frontend/next/
+frontend/next/cache/
+
+
+# ========================================
+# FRONTEND BUILD FILES
+# ========================================
+
+
+# ========================================
+# EDITOR FILES
+# ========================================
+.vscode/
+.idea/
+*.swp
