@@ -128,7 +128,7 @@ multi-model-app/
 │   │   └── Iris.csv               # Sample dataset
 │   ├── models/                     # Trained model storage
 │   ├── requirements.txt            # Python dependencies
-│   └── dockerfile                  # Container configuration
+│   
 ├── frontend/
 │   ├── app/
 │   │   ├── page.tsx               # Home page
@@ -140,8 +140,7 @@ multi-model-app/
 │   ├── lib/
 │   │   └── api-client.ts          # Backend API communication
 │   ├── package.json               # JavaScript dependencies
-│   └── dockerfile                 # Container configuration
-├── docker-compose.yml              # Multi-container orchestration
+│   
 ├── README.md                       # This file
 └── LICENSE                         # MIT License
 
