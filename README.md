@@ -215,28 +215,13 @@ This section explains the typical user journey through the application.
 - Model saved: joblib format for future predictions
 - Duration: 30 seconds to 5 minutes (depends on dataset size)
 
-### Step 6️⃣: Make Predictions
+### Step 6️⃣: Generate Flask API
 
-**What it does**: Use trained model to predict on new data
-
-**Two modes**:
+**What it does**: Use trained model to generated a featured API ready to use.
 
 #### Single Prediction
-```json
-{
-  "SepalLengthCm": 5.1,
-  "SepalWidthCm": 3.5,
-  "PetalLengthCm": 1.4,
-  "PetalWidthCm": 0.2
-}
-```
+- Just click the generate API button in the final step of the process, and go back to the dashboard and select your API from the 'select API list'
 
-#### Batch Prediction
-Upload CSV with same columns as training data
-- Returns predictions for all rows
-- Supports up to 1000 rows per batch
-
-**Backend**: `POST /api/predict/` or `POST /api/predict-batch/`
 
 ### Step 7️⃣: Monitor API Usage
 
