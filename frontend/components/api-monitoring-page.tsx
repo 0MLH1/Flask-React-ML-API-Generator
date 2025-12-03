@@ -286,7 +286,7 @@ export function APIMonitoringPage({ api, onBack, onConsume }: APIMonitoringPageP
                 <div className="md:col-span-2">
                   <p className="text-sm text-muted-foreground mb-2">Request URL (POST)</p>
                   <p className="font-mono p-2 bg-muted rounded text-sm">
-                    {`${process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000/api"}/predict/`}
+                    {`${process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000/api/consume"}/predict/`}
                   </p>
                 </div>
 
