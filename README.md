@@ -260,7 +260,6 @@ This section explains the typical user journey through the application.
 | Method | Endpoint | Description |
 |--------|----------|-------------|
 | POST | `/api/training/train` | Train the model |
-| GET | `/api/training/progress/{id}` | Get training progress |
 
 
 ### Generated API routes
@@ -323,7 +322,6 @@ This section explains the typical user journey through the application.
 ### 🔒 Production Ready
 - ✅ Error handling and validation
 - ✅ Database persistence (SQLite)
-- ✅ Docker containerization
 - ✅ Environment-based configuration
 - ✅ Logging and debugging
 - ✅ RESTful API design
@@ -448,7 +446,6 @@ npm run dev -- -p 3001
 **Problem**: "Connection refused" on http://localhost:8000
 ```bash
 # Ensure backend is running
-# Docker: Check with docker ps
 # Local: Check uvicorn server output
 ```
 
