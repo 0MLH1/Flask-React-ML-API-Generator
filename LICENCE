@@ -1,18 +1,20 @@
-Academic/Educational Use License (2025)
-
 Copyright (c) 2025 Mohamed Lahmam
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to use,
 copy, modify, and distribute the Software **solely for academic, educational,
-or research purposes**. 
+or research purposes**, and **only by forking this repository**.  
+
+Cloning the repository or copying the Software to create a new repository under
+your own name, or redistributing the Software as your own work, is strictly
+prohibited without prior written permission from the copyright holder.
 
 Commercial use, sale, sublicensing, or distribution for profit of the Software
 or any derivative works is strictly prohibited without prior written permission
 from the copyright holder.
 
 The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+forked copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -26,4 +28,3 @@ SOFTWARE.
 
 Author: Mohamed Lahmam  
 Email: lh186261@gmail.com
-
